@@ -192,4 +192,33 @@ EventEmitter, lo que significa que puede emitir y escuchar eventos.
  * process.exit([código]): Un método que finaliza el proceso actual. Puedes
 proporcionar un código de salida opcional como argumento para indicar el estado
 de salida del proceso.
+* ejemplo de uso:
+* ? console.log("Terminar");
+* ? process.exit();
+* ? console.log("Proceso");
+* al correrlo muestra en la consola:
+* ? Terminar
+ */
+/**
+ * process.env: Un objeto que contiene las variables de entorno del sistema.
+Puedes acceder a estas variables para obtener información como la configuración
+del sistema, rutas de archivo, claves de API, etc.
+* ejemplo de uso:
+* ? console.log(`Carpeta principal \n${process.env.PWD}`);
+* al correrlo muestra en la consola:
+* ? Carpeta principal
+* ? /c/User/ma980/Desktop/abierto
+ */
+/**
+ * process.stdin, process.stdout y process.stderr: Estos objetos permiten la
+interacción con la entrada estándar (stdin), la salida estándar (stdout) y la salida
+de error estándar (stderr) respectivamente. Puedes leer datos de la entrada
+estándar, escribir en la salida estándar y mostrar mensajes de error en la salida de
+error estándar.
+ */
+/**
+ * process.on(evento, callback): Un método para registrar devoluciones de llamada
+para manejar eventos del proceso. Puedes utilizar este método para capturar
+eventos como la salida del proceso, errores no capturados, señales del sistema
+operativo, etc.
  */
